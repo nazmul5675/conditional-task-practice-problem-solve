@@ -11,3 +11,19 @@ Create a simple JavaScript program that takes a student's score as input and ret
     F: 0-59
 
 ***/
+
+const prompt = require("prompt-sync")();
+let score = prompt("what is your score?");
+
+if (score >= 90) {
+    console.log("You Got A");
+} else if (score >= 80) {
+    console.log("You Got B");
+} else if (score >= 70) {
+    console.log("You Got C");
+} else if (score >= 60) {
+    console.log("You Got D");
+}
+else {
+    console.log("You Got F");
+}
